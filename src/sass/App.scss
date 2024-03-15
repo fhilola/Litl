@@ -1,0 +1,23 @@
+@import './_variables.scss';
+@import './_reset.scss';
+@import './_fonts.scss';
+
+:root{
+    --primary-light-color: #fff;
+    --primary-dark-color: #000;
+    --main-color: #0af886;
+    --extra-color: #02174c;
+    --secondary-dark-color: #7a7b7c;
+    --secondary-main-coloe: #e7fef3;
+    --secondary-light-color: #f5f5f5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
