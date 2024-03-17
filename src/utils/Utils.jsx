@@ -1,9 +1,16 @@
 import React from 'react'
+import './Utils.scss'
 
-const Utils = () => {
+const Container = ({children}) => {
   return (
-    <div>Utils</div>
+    <div className='container'>{children}</div>
   )
 }
 
-export default Utils
+const Button = ({children, appearence, type, onClick}) => {
+  return (
+    <button className={appearence ? `btn ${appearence}` : 'btn'} type={type} onClick={onClick}>{children}</button>
+  )
+}
+
+export {Container, Button}
