@@ -1,27 +1,35 @@
-.header{
+.header {
     border-bottom: 1px solid var(--secondary-dark-color);
+    max-width: 100%;
 }
-.navbar{
+
+.navbar {
     padding: 25px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
-.navbar-menu-list, .nav-action__wrapper{
+
+.navbar-menu-list,
+.nav-action__wrapper {
     margin: 0 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0 20px;
-    .navbar-menu-btn{
+
+    .navbar-menu-btn {
         display: none;
     }
 }
-.navbar-menu-link{
+
+.navbar-menu-link {
     color: var(--extra-color);
     padding: 16px 24px;
     text-wrap: nowrap;
-    &--active{
+
+    &--active {
         border: 1px solid var(--main-color);
         background-color: var(--secondary-main-color);
         border-radius: 8px;
@@ -30,9 +38,9 @@
 }
 
 @media only screen and (max-width: 1200px) {
-    .nav-action__wrapper{
-        button{
-            &:nth-child(2){
+    .nav-action__wrapper {
+        button {
+            &:nth-child(2) {
                 text-wrap: nowrap;
             }
         }
@@ -40,21 +48,25 @@
 }
 
 @media only screen and (max-width: 640px) {
-    .header{
+    .header {
         border: none;
     }
-    .navbar-menu-list{
+
+    .navbar-menu-list {
         display: none;
     }
-    .navbar-logo{
+
+    .navbar-logo {
         width: 111px;
         height: 49px;
     }
-    .nav-action__wrapper{
-        button{
+
+    .nav-action__wrapper {
+        button {
             display: none;
         }
-        .navbar-menu-btn{
+
+        .navbar-menu-btn {
             display: block;
             width: 40px;
             height: 40px;
@@ -68,5 +80,27 @@
             font-size: 20px;
             border-radius: 0;
         }
+    }
+    .hero-content__wrapper {
+        flex-direction: column;
+       .hero-content{
+         h1 {
+            font-size: 36px;
+            line-height: 45px;
+            letter-spacing: 0.03em;
+            max-width: 588px;
+            width: 100%;
+        }
+        p{
+            max-width: 588px;
+            width: 100%;
+        }
+       }
+       .hero-image{
+        img{
+            width: 100%;
+        }
+       }
+
     }
 }
