@@ -2,6 +2,39 @@
 @import './_reset.scss';
 @import './_fonts.scss';
 
+@font-face {
+    font-family: 'Sora regular';
+    src: url('../assets/fonts/Sora-Regular.ttf');
+}
+@font-face {
+    font-family: 'Sora bold';
+    src: url('../assets/fonts/Sora-Bold.ttf');
+}
+@font-face {
+    font-family: 'Sora extra bold';
+    src: url('../assets/fonts/Sora-ExtraBold.ttf');
+}
+@font-face {
+    font-family: 'Sora semibold';
+    src: url('../assets/fonts/Sora-SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Sora medium';
+    src: url('../assets/fonts/Sora-Medium.ttf');
+}
+@font-face {
+    font-family: 'Sora light';
+    src: url('../assets/fonts/Sora-Light.ttf');
+}
+@font-face {
+    font-family: 'Sora extra light';
+    src: url('../assets/fonts/Sora-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'Sora thin';
+    src: url('../assets/fonts/Sora-Thin.ttf');
+}
+
 :root{
     --primary-light-color: #fff;
     --primary-dark-color: #000;
@@ -10,13 +43,21 @@
     --secondary-dark-color: #7a7b7c;
     --secondary-main-coloe: #e7fef3;
     --secondary-light-color: #f5f5f5;
+    --sora-regular: 'Sora regular';
+    --sora-bold: 'Sora bold';
+    --sora-extra-bold: 'Sora extra bold';
+    --sora-semibold: 'Sora semibold';
+    --sora-medium: 'Sora medium';
+    --sora-light: 'Sora light';
+    --sora-extra-light: 'Sora extra light';
+    --sora-thin: 'Sora thin';
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--sora-regular);
 }
 a{
     text-decoration: none;
