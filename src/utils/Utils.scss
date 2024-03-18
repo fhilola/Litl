@@ -1,7 +1,7 @@
 .container{
     max-width: 1360px;
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
@@ -19,4 +19,17 @@
         border-color:  var(--main-color);
         color: var(--main-color );
     }
+}
+
+.different-text{
+    color: var(--main-color);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px 0;
+    width: 100%;
 }

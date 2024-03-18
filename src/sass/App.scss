@@ -63,3 +63,18 @@
 a{
     text-decoration: none;
 }
+label{
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+    color: var(--extra-color);
+    max-width: 800px;
+    width: 100%;
+}
+input{
+    text-indent: 10px;
+    padding: 16px 0;
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid var(--extra-color);
+}

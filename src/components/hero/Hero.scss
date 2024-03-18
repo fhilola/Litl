@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
+    margin: 50px;
 }
 
 .hero-content {
@@ -15,12 +15,8 @@
         font-size: 56px;
         font-weight: 900;
         line-height: 71px;
-        width: 578px;
+        max-width: 578px;
         color: var(--extra-color);
-
-        span {
-            color: var(--main-color);
-        }
     }
 
     p {
@@ -30,6 +26,11 @@
         line-height: 24px;
         letter-spacing: 0.05em;
         text-align: left;
-        width: 634px;
+        max-width: 634px;
+    }
+}
+.hero-image{
+    img{
+        width: 100%;
     }
 }

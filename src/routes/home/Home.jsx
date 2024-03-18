@@ -1,12 +1,13 @@
 import React from 'react'
-import Navbar from '../../layout/navbar/Navbar'
-import { Container } from '../../utils/Utils'
+import './Home.scss'
 import Hero from '../../components/hero/Hero'
+import LittleActions from '../../components/little-actions/LittleActions'
 
 const Home = () => {
   return (
     <main>
       <Hero/>
+      <LittleActions/>
     </main>
   )
 }

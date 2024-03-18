@@ -1,0 +1,15 @@
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    h4 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40px;
+        color: var(--extra-color);
+        margin-bottom: 50px;
+    }
+}
