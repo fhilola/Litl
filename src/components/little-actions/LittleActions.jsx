@@ -8,7 +8,7 @@ const LittleActions = () => {
     return (
         <section className='Url'>
             <Container>
-                <h2 className='url-title'>Bepul hisob oching va <DifferentText>Litl</DifferentText>-ni ishga tushiring</h2>
+                <h3 className='title'>Bepul hisob oching va <DifferentText>Litl</DifferentText>-ni ishga tushiring</h3>
                 <strong className='url-text'>Ajoyib ulanishlar bosish bilan boshlanadi</strong>
                 <div className="actions__wrapper">
                     <ul className='url-list'>

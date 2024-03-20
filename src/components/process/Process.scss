@@ -1,0 +1,59 @@
+.process {
+    margin: 100px 0;
+}
+
+.process-content {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    max-width: 100%;
+    gap: 50px;
+    background-color: var(--extra-color);
+    border-radius: 40px;
+}
+
+.process-card {
+    color: var(--primary-light-color);
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    padding: 15px;
+    border-radius: 24px;
+    transition: .2s;
+
+    span {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--main-color);
+        border-radius: 50%;
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    h5 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 40.32px;
+        text-align: left;
+
+    }
+
+    p {
+        line-height: 23.12px;
+        text-align: left;
+    }
+
+    &:hover {
+        background-color: var(--main-color);
+
+    }
+
+    &:hover span {
+        background-color: var(--primary-light-color);
+        color: var(--main-color);
+    }
+}
