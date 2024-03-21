@@ -22,18 +22,6 @@
     border-radius: 24px;
     transition: .2s;
 
-    span {
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--main-color);
-        border-radius: 50%;
-        font-size: 36px;
-        font-weight: 600;
-    }
-
     h5 {
         font-size: 32px;
         font-weight: 600;
@@ -52,7 +40,7 @@
 
     }
 
-    &:hover span {
+    &:hover button {
         background-color: var(--primary-light-color);
         color: var(--main-color);
     }

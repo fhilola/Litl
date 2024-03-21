@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.scss'
-import { Button, Container } from '../../utils/Utils'
+import { Button, CircleButton, Container } from '../../utils/Utils'
 import Logo from '../../assets/images/svg/Logo.svg'
 import { NavLink } from 'react-router-dom'
 import { FiMenu } from "react-icons/fi";
@@ -28,7 +28,7 @@ const Navbar = () => {
           <div className="nav-action__wrapper">
             <Button>Kirish</Button>
             <Button>Taklif Havola</Button>
-            <button className='navbar-menu-btn'><FiMenu/></button>
+            <CircleButton type='menu'><FiMenu/></CircleButton>
           </div>
       </nav>
         </Container>

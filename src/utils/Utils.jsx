@@ -30,4 +30,10 @@ const Button = ({children, appearence, type, onClick}) => {
   )
  }
 
-export {Container, Button, DifferentText, Form}
+ const CircleButton = ({children, type}) => {
+  return (
+    <button className={type === 'menu' ? 'circle-btn circle-btn--menu' : type === 'large' ? 'circle-btn circle-btn--large' : type === 'small' ? 'circle-btn circle-btn--small' : 'circle-btn' }>{children}</button>
+  )
+ }
+
+export {Container, Button, DifferentText, Form, CircleButton}

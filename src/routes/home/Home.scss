@@ -3,7 +3,7 @@
         display: none;
     }
 
-    .navbar-menu-btn {
+    .circle-btn {
         display: flex;
     }
 
@@ -14,6 +14,21 @@
             }
         }
     }
+
+    // .service-content{
+    //     h3{
+    //         font-size: 40px;
+    //         line-height: 50px !important;
+    //     }
+    // }
+
+    .service__wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items:stretch;
+        gap: 150px 0;
+    }
     
 }
 
@@ -22,6 +37,13 @@
         .process-content {
         grid-template-columns: repeat(2, 1fr);
     }
+    }
+
+    .service-content{
+        h3{
+            font-size: 30px;
+            line-height: 45px !important;
+        }
     }
 }
 
