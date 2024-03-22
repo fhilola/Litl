@@ -5,6 +5,8 @@ import LittleActions from '../../components/little-actions/LittleActions'
 import Process from '../../components/process/Process'
 import Service from '../../components/service/Service'
 import Partner from '../../components/partner/Partner'
+import Faq from '../../components/faq/Faq'
+import Footer from '../../layout/footer/Footer'
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
       <Process/>
       <Service/>
       <Partner/>
+      <Faq/>
+      <Footer/>
     </main>
   )
 }

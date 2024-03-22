@@ -1,4 +1,5 @@
 import React from 'react'
+import './Partner.scss'
 import { Container, DifferentText } from '../../utils/Utils'
 import bitly from '../../assets/images/svg/bitly.svg'
 import behance from '../../assets/images/svg/behance.svg'

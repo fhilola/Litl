@@ -67,3 +67,35 @@
     gap: 50px 0;
     width: 100%;
 }
+
+
+
+.item {
+    background-color: var(--secondary-light-color);
+    margin-bottom: 5px;
+    padding: 20px 20px;
+    border-radius: 12px;
+
+}
+
+.accordion-title {
+    color: var(--extra-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content {
+    color: var(--extra-color);
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s cubic-bezier(0, 1, 0, 1);
+}
+
+.content.show {
+    height: auto;
+    max-height: 999px;
+    transition: all .5s cubic-bezier(1, 0, 1, 0);
+    padding: 20px 0;
+}
