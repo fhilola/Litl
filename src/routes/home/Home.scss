@@ -15,12 +15,6 @@
         }
     }
 
-    // .service-content{
-    //     h3{
-    //         font-size: 40px;
-    //         line-height: 50px !important;
-    //     }
-    // }
 
     .service__wrapper{
         width: 100%;
@@ -41,6 +35,9 @@
     }
     }
 
+    .service__wrapper{
+        gap: 50px 0 !important;
+    }
     .service-content{
         h3{
             font-size: 30px;
@@ -81,6 +78,7 @@
     }
     }
 
+    
 
     .accordion{
         grid-template-columns: 1fr !important;
@@ -151,6 +149,15 @@
         grid-template-columns: repeat(1, 1fr);
         }
     }
+
+    .statistics__wrapper{
+        width: 100%;
+        grid-template-columns: 1fr !important;
+        .statistic-card{
+            max-width: 100% !important;
+        }
+    }
+
 }
 
 

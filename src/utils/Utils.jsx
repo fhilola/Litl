@@ -33,9 +33,9 @@ const Form = ({ children, text }) => {
   )
 }
 
-const CircleButton = ({ children, type }) => {
+const CircleButton = ({ children, type, onClick }) => {
   return (
-    <button className={type === 'menu' ? 'circle-btn circle-btn--menu' : type === 'large' ? 'circle-btn circle-btn--large' : type === 'small' ? 'circle-btn circle-btn--small' : 'circle-btn'}>{children}</button>
+    <button onClick={onClick} className={type === 'menu' ? 'circle-btn circle-btn--menu' : type === 'large' ? 'circle-btn circle-btn--large' : type === 'small' ? 'circle-btn circle-btn--small' : 'circle-btn'}>{children}</button>
   )
 }
 

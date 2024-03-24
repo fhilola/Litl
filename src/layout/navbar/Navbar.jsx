@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Navbar.scss'
 import { Button, CircleButton, Container } from '../../utils/Utils'
 import Logo from '../../assets/images/svg/Logo.svg'
 import { NavLink } from 'react-router-dom'
 import { FiMenu } from "react-icons/fi";
+import Menu from '../menu/Menu'
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false)
   return (
     <header className='header'>
         <Container>
@@ -27,9 +29,15 @@ const Navbar = () => {
           </ul>
           <div className="nav-action__wrapper">
             <Button>Kirish</Button>
-            <Button>Taklif Havola</Button>
-            <CircleButton type='menu'><FiMenu/></CircleButton>
+            <Button >Taklif Havola</Button>
+            <CircleButton type='menu' onClick={() => {
+              setOpen(!open)
+              console.log(open);
+            }}><FiMenu/></CircleButton>
           </div>
+          {
+            open && <Menu open={open} setOpen={setOpen}/>
+          }
       </nav>
         </Container>
     </header>
