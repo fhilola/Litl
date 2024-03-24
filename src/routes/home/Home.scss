@@ -26,6 +26,13 @@
     .partners__wrapper{
         overflow: auto;
     }
+
+
+    .menu-li{
+        &:last-child, &:nth-child(5){
+            display: none;
+        }
+    }
 }
 
 @media only screen and (max-width: 1024px){
@@ -155,6 +162,12 @@
         grid-template-columns: 1fr !important;
         .statistic-card{
             max-width: 100% !important;
+        }
+    }
+
+    .menu-li{
+        &:last-child, &:nth-child(5){
+            display: inline-block;
         }
     }
 

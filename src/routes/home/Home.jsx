@@ -17,7 +17,6 @@ const Home = () => {
       <Service/>
       <Partner/>
       <Faq/>
-      <Footer/>
     </main>
   )
 }

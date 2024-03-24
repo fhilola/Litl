@@ -99,3 +99,18 @@
     transition: all .5s cubic-bezier(1, 0, 1, 0);
     padding: 20px 0;
 }
+
+.menu-li{
+    margin: 6px;
+}
+.menu-link {
+    color: var(--extra-color) !important;
+    padding: 16px 24px;
+    text-wrap: nowrap;
+    &--active {
+        border: 1px solid var(--main-color);
+        background-color: var(--secondary-main-color);
+        border-radius: 8px;
+        color: var(--main-color);
+    }
+}

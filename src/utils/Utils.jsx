@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Utils.scss'
 import { FaPlus, FaMinus } from "react-icons/fa6";
 import { Collapse, Divider } from 'antd';
+import { NavLink } from 'react-router-dom';
 
 
 const Container = ({ children }) => {
@@ -59,4 +60,18 @@ const QandA = ({ question, answer, index }) => {
   )
 }
 
-export { Container, Button, DifferentText, Form, CircleButton, QandA }
+const H3 = ({ children, type }) => {
+  return(
+    <h3>{children}</h3>
+  )
+}
+
+const MenuLink = ({ children, to }) => {
+  return(
+    <li className='menu-li'>
+      <NavLink className={({isActive})=> isActive ? 'menu-link menu-link--active' : 'menu-link'} to={to}>{children}</NavLink>
+    </li>
+  )
+}
+
+export { Container, Button, DifferentText, Form, CircleButton, QandA, MenuLink, H3 }
