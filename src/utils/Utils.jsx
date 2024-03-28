@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './Utils.scss'
 import { FaPlus, FaMinus } from "react-icons/fa6";
-import { Collapse, Divider } from 'antd';
 import { NavLink } from 'react-router-dom';
+import { FaRegUser } from "react-icons/fa6";
 
 
 const Container = ({ children }) => {
@@ -60,18 +60,31 @@ const QandA = ({ question, answer, index }) => {
   )
 }
 
-const H3 = ({ children, type }) => {
-  return(
-    <h3>{children}</h3>
-  )
-}
-
 const MenuLink = ({ children, to }) => {
-  return(
+  return (
     <li className='menu-li'>
-      <NavLink className={({isActive})=> isActive ? 'menu-link menu-link--active' : 'menu-link'} to={to}>{children}</NavLink>
+      <NavLink className={({ isActive }) => isActive ? 'menu-link menu-link--active' : 'menu-link'} to={to}>{children}</NavLink>
     </li>
   )
 }
 
-export { Container, Button, DifferentText, Form, CircleButton, QandA, MenuLink, H3 }
+
+const StatisticCards = ({ data, type }) => {
+  return (
+    <div className={type === 'line' ? "statistics__wrapper line" : "statistics__wrapper"}>
+      {
+        data.map((item, index) =>
+          <div className='statistic-card' key={index}>
+            <div>
+              <h4 className='statistic-number'>{item.number}</h4>
+              <p>{item.description}</p>
+            </div>
+            <CircleButton type='small'><FaRegUser /></CircleButton>
+          </div>
+        )
+      }
+    </div>
+  )
+}
+
+export { Container, Button, DifferentText, Form, CircleButton, QandA, MenuLink, StatisticCards }

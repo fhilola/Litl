@@ -5,6 +5,7 @@ import { CircleButton, Container } from '../../utils/Utils'
 import { TfiLinkedin } from "react-icons/tfi";
 import { BsInstagram, BsTelegram } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -25,25 +26,55 @@ const Footer = () => {
         </div>
         <div className="footer-menu__wrapper">
           <ul className='footer-menu'>
-          <li>Menu</li>
-          <li>Bosh sahifa</li>
-          <li>Referal ulash</li>
-          <li>QR Code</li>
-          <li>URL havola</li>
+          <li>
+            <Link to='/'>Menu</Link>
+          </li>
+          <li>
+            <Link to='/'>Bosh sahifa</Link>
+          </li>
+          <li>
+            <Link to='/'>Referal ulash</Link>
+          </li>
+          <li>
+            <Link to='/'>QR Code</Link>
+          </li>
+          <li>
+            <Link to='my-url'>URL havola</Link>
+          </li>
         </ul>
         <ul className='footer-menu'>
-          <li>Kompaniya</li>
-          <li>Biz haqimizda</li>
-          <li>Yordam markazi</li>
-          <li>Bizning jamoa</li>
-          <li>URL havola</li>
+          <li>
+            <Link to='/'>Kompaniya</Link>
+          </li>
+          <li>
+            <Link to='/'>Biz haqimizda</Link>
+          </li>
+          <li>
+            <Link to='/'>Yordam markazi</Link>
+          </li>
+          <li>
+            <Link to='/'>Bizning jamoa</Link>
+          </li>
+          <li>
+            <Link to='my-url'>URL havola</Link>
+          </li>
         </ul>
         <ul className='footer-menu'>
-          <li>Xizmatlar</li>
-          <li>Link qisqartirish</li>
-          <li>Referal ulash</li>
-          <li>QR Code yaratish</li>
-          <li>Havolalarni birlashtirish</li>
+          <li>
+            <Link to='/'>Xizmatlar</Link>
+          </li>
+          <li>
+            <Link to='/'>Link qisqartirish</Link>
+          </li>
+          <li>
+            <Link to='/'>Referal ulash</Link>
+          </li>
+          <li>
+            <Link to='/'>QR Code yaratish</Link>
+          </li>
+          <li>
+            <Link to='/'>Havolalarni birlashtirish</Link>
+          </li>
         </ul>
         </div>
       </div>

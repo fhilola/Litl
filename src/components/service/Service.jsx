@@ -1,7 +1,8 @@
 import React from 'react'
 import './Service.scss'
-import { Button, CircleButton, Container, DifferentText } from '../../utils/Utils'
-import { FaRegUser } from "react-icons/fa6";
+import { Button, CircleButton, Container, DifferentText, StatisticCards } from '../../utils/Utils'
+
+import data from '../../data/home.json'
 
 const Service = () => {
   return (
@@ -15,36 +16,7 @@ const Service = () => {
                     <Button>Bepul boshlash</Button>
                 </div>
             </div>
-            <div className="statistics__wrapper">
-                <div className='statistic-card'>
-                    <div>
-                        <h4 className='statistic-number'>100 K</h4>
-                    <p>faol foydalanuvchilar</p>
-                    </div>
-                    <CircleButton type='small'><FaRegUser/></CircleButton>
-                </div>
-                <div className='statistic-card'>
-                    <div>
-                        <h4 className='statistic-number'>50 K</h4>
-                    <p>oylik yaratiladigan linklar</p>
-                    </div>
-                    <CircleButton type='small'><FaRegUser/></CircleButton>
-                </div>
-                <div className='statistic-card'>
-                    <div>
-                        <h4 className='statistic-number'>400+</h4>
-                    <p>integratsiya</p>
-                    </div>
-                    <CircleButton type='small'><FaRegUser/></CircleButton>
-                </div>
-                <div className='statistic-card'>
-                    <div>
-                        <h4 className='statistic-number'>99%</h4>
-                    <p>server yangilanishi</p>
-                    </div>
-                    <CircleButton type='small'><FaRegUser/></CircleButton>
-                </div>
-            </div>
+            <StatisticCards data={data}/>
         </div>
         </Container>
     </section>
